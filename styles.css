@@ -130,84 +130,24 @@ body {
     background-position: 0 0;
   }
 }
-@media screen and (max-width:768px) {
-  *{
-    font-size: 0.75rem;
-  }
-  
-  .right ul {
-    display: none;
-    position: absolute;
-    justify-content:space-evenly ;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: rgb(9, 97, 173);
-    flex-direction: column;
-    text-align: center;
-  }
-  .menu-icon {
-    display: flex;
-    position:absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-  }
-  .navbar {
-    justify-content: space-around;
-    position: relative;
-  }
-
-  .navbar.active .menu {
-    display: flex;
-  }
-  .firstsection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 90px 0;
-    align-items: center;
-  }
-  .flx {
-    flex-direction: column;
-  }
-  .port{
-    flex-direction: column;
-  }
-  .projects{
-    margin: 50px;
-  }
-  .certi{
-    margin: 50px;
-  }
-  .foot{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .trdfoot {
-    margin: 15px;
-    float: left;
-    width: 90%;
-}
-
-}
 
 
 
 
 .firstsection {
-  padding: 5px;
   display: flex;
-  justify-content: space-around;
-  margin: 90px 10px;
   align-items: center;
+  justify-content:space-around;
+ 
+  
 }
 
 
 
 .leftsection {
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-size: 2.8rem;
   width: 50%;
 }
@@ -239,8 +179,8 @@ hr {
 }
 
 .aboutme {
-  min-height: 864px;
-  margin: 30px;
+  height: fit-content;
+  margin: 100px;
   
 
 }
@@ -271,6 +211,9 @@ hr {
 .edu h2 {
   margin: 40px 0 20px 0;
   text-decoration: underline;
+}
+.edu .gap{
+  margin: 10px 0 10px 0;
 }
 
 .flx {
@@ -391,16 +334,7 @@ hr {
   text-decoration: none;
 }
 
-.sndfoot ul li a {
-  text-decoration: none;
-  color: white;
-}
 
-.sndfoot ul li {
-  list-style: none;
-  margin: 5px 0;
-
-}
 .fstfoot{
   margin: 20px;
   
@@ -424,6 +358,10 @@ hr {
   display: flex;
   justify-content: space-around;
 }
+.projects{
+  width: 40%;
+  font-size: larger;
+}
 
 .projects h2 {
   margin: 5px 0;
@@ -434,7 +372,10 @@ hr {
   padding: 9px;
 }
 
-
+.certi{
+  width: 40%;
+    font-size: large;
+}
 .certi span {
   padding: 9px;
   
@@ -468,4 +409,92 @@ hr {
       transform: translateY(2px);
   }
   
+}
+@media screen and (max-width:768px) {
+  
+  .left {
+    margin: 0;
+}
+  .right ul {
+    display: none;
+    position: absolute;
+    height: 300px;
+      font-size: 2rem;
+      z-index: 1;
+    justify-content:space-evenly ;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgb(9, 97, 173);
+    flex-direction: column;
+    text-align: center;
+
+    
+  }
+  
+  .menu-icon {
+    display: flex;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .navbar.active .menu {
+    display: flex;
+  }
+  .firstsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+  }
+  .leftsection{
+    width: fit-content;
+  }
+  .rightsection  {
+    display:none;
+  }
+  .aboutme{
+    margin: 20px;
+  }
+  .am1 p {
+    font-size: 20px;
+}
+  .flx {
+    flex-direction: column;
+  }
+  .edu{
+    margin: 0;
+  }
+  .skills{
+    margin: 0;
+  }
+  .port{
+    flex-direction: column;
+  }
+  .projects{
+    margin: 0;
+    width: fit-content;
+  }
+  .certi{
+    width: fit-content;
+    margin: 0;
+  }
+  .foot{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .trdfoot {
+    margin: 15px;
+    float: left;
+    width: 90%;
+}
+
 }
