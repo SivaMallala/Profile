@@ -371,6 +371,10 @@ hr {
 .projects span {
   padding: 9px;
 }
+.ance{
+  text-decoration: none;
+  color: white;
+}
 
 .certi{
   width: 40%;
